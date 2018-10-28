@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Accurate calendar for events in 2018 following October 3rd">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost in space</title>
+
+</head>
+
+<body>
+   <header>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="article1.html">Stars and Planets</a>
+        <a href="article2.html">Research</a>
+        <a href="article3.html">Events 2018</a>
+    </nav>
+</header>
+<main>
+    <h1><a href="http://www.seasky.org/astronomy/astronomy-calendar-current.html"><storng>Upcoming events</storng></a></h1>
+    <section id="art1">
+        <p><i>October 9</i> - <b>New Moon.</b> At 03:47 UTC the New Moon will shine, but, sadly, won't be visible in the night sky. Still, you can enjoy one fine evening just observing faint objects such as galaxies and star clusters, because there is no moonlight to interfere the scene.
+        </p>
+        <img src="images/june-13-2018-new-moon.png">
+    </section>
+    <section id="art2">
+        <p><i>October 22, 23</i> -<b> Orionids Meteor Shower.</b> This meteor shower is an average one, thus the sky will be light with only 20 meteors per hour at its peak. The scene will be all thanks to comet Haley. :) </p>
+        <img src="images/perseid-591937528.jpg">
+    </section>
+     <section id="art3">
+         <p><i>November 23</i> - <b>Full Moon.</b> At 05:40 UTC you can experience the breathtaking sight of the so called since ancient times "The Hunter's Moon" as this was the time of year to set the beaver traps before the swamps and rivers froze.</p>
+         <img src="images/5a231acf1900006111034294.jpeg">
+    </section>
+    <section id="art4">
+        <p><i>December 15</i> - <b>Mercury at Greatest Western Elongation.</b> This will be the best time to look at the sky before sunrse and search for Mercury, because the planet will be reaching its greatest western elongation of 21.3 degrees from the Sun.</p>
+        <img src="images/f0401-InnerPlan.JPG">
+    </section>
+     <section id="art5">
+         <p><i>December 21</i> -<b> December Solstice.</b> The South Pole of the earth will be tilted toward the Sun, which will have reached its southernmost position in the sky and will be directly over the Tropic of Capricorn at 23.44 degrees south latitude. This is the first day of winter (winter solstice) in the Northern Hemisphere and the first day of summer (summer solstice) in the Southern Hemisphere.</p>
+         <img src="images/26590814-Illustration-of-winter-solstice-on-december-21-Globe-with-North-America-and-South-America-sunlight-a-Stock-Vector.jpg">
+    </section>
+     
+    
+</main>
+   <script>
+    window.onscroll = function() {
+        myFunction()
+    };
+        var navbar= document.getElementById("navbar");
+        var sticky= navbar.offsetTop;
+        
+        function myFunction()
+        {
+            if(window.pageXOffset>=sticky){
+                navbar.classList.add("sticky")
+            }else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <footer style="font-size: 18px; text-align: center; background-color: whitesmoke; padding: 6px; font-style: oblique">
+        <p>  Copyrights: http://www.seasky.org/astronomy/astronomy-calendar-current.html</p>
+    </footer>
+</body>
+
+</html>

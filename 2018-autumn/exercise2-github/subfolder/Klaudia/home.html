@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Home page of the one and only so colorful online magazine you will find about space...ever, all thanks to Maria, Jan and Sergio">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost in space</title>
+    <style>
+        body {
+            background-image: url(images/445967.jpg);
+            background-size: cover;
+
+    </style>
+
+</head>
+
+<body>
+   <header>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="article1.html">Stars and Planets</a>
+        <a href="article2.html">Research</a>
+        <a href="article3.html">Events 2018</a>
+
+</nav>
+    </header>
+    <main id="home">
+        <div class="box-model">
+           <section>
+                    <a href="article1.html">
+                     <div id="box1">
+
+                    <h2>Stars and Planets</h2>
+                    <p>By clicking here you will be able to get general information considering the stars and the planets, as well as some interesting facts about them.</p>
+                </div>
+            </a>
+            </section>
+            <section>
+            <a href="article2.html">
+                <div id="box2">
+                    <h2>Research</h2>
+                    <p> This link will lead you to the depths of the space world as scientists see it and the latest articles NASA and IAU have posted on their official and unofficial pages.</p>
+                </div>
+            </a>
+            </section>
+            <section>
+            <a href="article3.html">
+                <div id="box3">
+                    <h2>Events 2018</h2>
+                    <p> Here you can see the events that you still haven't missed (if you are checking this page before the end of October, of course) and will be able to observe without telescope.</p>
+                </div>
+            </a>
+            </section>
+        </div>
+    </main>
+   <footer id="home-page-footer">
+        <p>Copyright: Klaudia Velikova</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+
+    </script>
+ 
+</body>
+
+</html>

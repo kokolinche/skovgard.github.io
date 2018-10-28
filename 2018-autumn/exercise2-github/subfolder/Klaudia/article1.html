@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Planets and stars - all the general and most bosic info you need to know what they are">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lost in space</title>
+    <style>
+        #parallax-1 {
+            background-image: url(data/article2-test.png);
+            background-size: cover;
+        }
+
+        #parallax-2 {
+            background-image: url(data/3test.png);
+            background-size: cover;
+        }
+
+        #parallax-3 {
+            background-image: url(data/1.png);
+            background-size: cover;
+        }
+    </style>
+
+</head>
+
+<body>
+ <header>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <a href="article1.html">Stars and Planets</a>
+        <a href="article2.html">Research</a>
+        <a href="article3.html">Events 2018</a>
+        </nav>
+</header>
+    <div id="parallax-1"></div>
+    <div id="parallax-2"></div>
+    <div id="parallax-3"></div>
+ <footer>
+        <p>Copyright: Klaudia Velikova</p>
+    </footer>
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageXOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
